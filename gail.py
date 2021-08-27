@@ -443,9 +443,9 @@ class gail(object):
     def run(self):
         setproctitle.setproctitle('gail@wuyuchen')
         print(self)
-        #self.generator_pretrain_run(10000)
+        self.generator_pretrain_run(10000)#generator pretrain setting
         print('generator')
-        #self.discriminator_pretrain_run(10000)
+        self.discriminator_pretrain_run(10000)#discriminator pretrain setting
         print('pretrain end')
 
         for i in range( self.episode):
