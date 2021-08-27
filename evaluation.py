@@ -430,7 +430,7 @@ def evaluate(datasets):
         individualEval = IndividualEval(data='geolife')
     
     test_data = read_data_from_file('raw_data/%s/real.data' % opt.datasets)
-    gene_data = np.load('eval/eval_5.npy')
+    gene_data = np.load('eval.npy')
     print(individualEval.get_individual_jsds(test_data,gene_data))
     
 
