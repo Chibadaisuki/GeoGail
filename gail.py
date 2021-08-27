@@ -441,7 +441,7 @@ class gail(object):
             self.discriminator_pretrain()
             
     def run(self):
-        setproctitle.setproctitle('gail@wuyuchen')
+        setproctitle.setproctitle('gail')
         print(self)
         self.generator_pretrain_run(10000)#generator pretrain setting
         print('generator')
