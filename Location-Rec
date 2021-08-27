@@ -27,7 +27,7 @@ def matrix_factorization(R,P,Q,K,steps=1000,alpha=0.01,beta=0.02):
     return P,Q.T,result
 
 if __name__ == '__main__':   
-    R=np.load(r'C:\Users\Lenovo\Desktop\train_add.npy')
+    R=np.load('train_add.npy')
     R=numpy.array(R)
     N=len(R)    
     M=len(R[0]) 
@@ -38,9 +38,3 @@ if __name__ == '__main__':
     print(R)         
     R_MF=numpy.dot(nP,nQ.T)
     np.save('train_add_result.npy',R_MF)
-    print(R_MF)      
-
-    plt.plot(range(len(result)),result)
-    plt.xlabel("time")
-    plt.ylabel("loss")
-    plt.show()
