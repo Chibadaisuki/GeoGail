@@ -1,7 +1,7 @@
 # GeoGail
 
 A novel imitation learning based method to synthesize human trajectories. 
-![Result](Framework_Overall2.png， width = '300')
+![Result](Framework_Overall2.png)
 
 ## Table of Contents
 
