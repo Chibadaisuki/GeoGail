@@ -38,23 +38,13 @@ https://www.microsoft.com/en-us/download/details.aspx?id=52367&from=https%3A%2F%
 
 ### Model
 
-Toy model of MLP and CNN
-#### MLP structure 
-![Result](baseline_model.png?raw=true)
+This model utilizes a novel semantics-based interaction mechanism between the decision-making strategy and visitations to diverse geographical locations to model them in the semantic domain in a uniform manner. To augment the modeling ability to the real-world human decision-making policy, we propose a feature extraction model to extract the internal latent factors of variation of different individuals. Further, to better reward users' mobility behavior, we propose a novel multi-scale reward net combined with mutual information to model the instant reward, long-term reward, and individual characteristics in a cohesive manner.
+
+![Result](generator3.png?raw=true)
 
 ```sh
-$ run MLP.ipynb
+$ run run.py
 ```
-#### CNN structure 
-![Result](Resnet34.png?raw=true)
-
-```sh
-$ run CNN--resnet34.ipynb
-```
-### Quantiazationmethod
-
-Kmeans method for quantization
-
 
 ### Contributors
 
