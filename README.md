@@ -42,8 +42,9 @@ This model utilizes a novel semantics-based interaction mechanism between the de
 
 ![Result](generator3.png?raw=true)
 
+### Run the whole program
 ```sh
-$ run run.py
+$ python run.py
 ```
 
 ### Contributors
