@@ -1,23 +1,6 @@
 # GeoGail
 
-KMeans with Loss Function
-
-The new clustering algorithm is :
- argmini loss(x -> ci)  => argmini  (L(x)+ dL/dx (x - ci) )
-
-To our understanding, x is each individual weight and L(x)  is the loss value that we got from the original network. Then, L(x) is the same for all weights. So the problem becomes a 1-d Kmeans clustering problem, with weighted L1 distance from weight to its closest centroids. 
-
-Algorithm becomes: argmini   dL/dx* (x - ci)
-
-Imaging in a 1-d axis, if dL/dx is positive, (x - ci) would tend to choose the largest farthest point as ci so that (x-ci) is negative with the largest absolute value. Similarly, if dL/dx is negative, (x - ci) would tend to choose the smallest farthest point as ci so that (x-ci) is positive with the largest absolute value. Then, the algorithm will also choose the two points. In order to avoid this, we need to use the absolute value to do all comparison. 
-
-Algorithm becomes: argmini  | dL/dx *(x - ci)|
-
-Hence, after clustering, we use similar algorithm to find cluster mean, 
-argminc  x  Clusterloss (x -> c) =argminc x  Cluster| dL/dx *(x - c) |
-
-The new centroids becomes the mean of x  Cluster| dL/dx *(x - c) | for each cluster. 
-And we have a pleasing result.
+Synthesized human trajectories are crucial for a large number of applications. Existing solutions are mainly based on the generative adversarial network (GAN), which is limited due to the lack of modeling the human decision-making process. In this paper, we propose a novel imitation learning based method to synthesize human trajectories.  This model utilizes a novel semantics-based interaction mechanism between the decision-making strategy and visitations to diverse geographical locations to model them in the semantic domain in a uniform manner. To augment the modeling ability to the real-world human decision-making policy, we propose a feature extraction model to extract the internal latent factors of variation of different individuals, and then propose a novel self-attention based policy net to capture the long-term correlation of mobility and decision-making patterns. Then, to better reward users' mobility behavior, we propose a novel multi-scale reward net combined with mutual information to model the instant reward, long-term reward, and individual characteristics in a cohesive manner. Extensive experimental results on two real-world trajectory datasets show that our proposed model can synthesize the most high-quality trajectory data compared with six state-of-the-art baselines in terms of a number of key usability metrics, and can well support practical applications based on trajectory data, demonstrating its effectiveness. What's more, our proposed method can learn explainable knowledge automatically from data, including explainable statistical features of trajectories and statistical relation between decision-making policy and features.
 ![Result](ModifiedKmean1.png?raw=true)
 
 ## Table of Contents
