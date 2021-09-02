@@ -32,20 +32,10 @@ This is only a documentation package.
 
 ### Data
 
-To get the data for the model.
-#### Data for MLP
-[train|dev]_labels.npy contain a numpy object array of shape [utterances]. Each element in the array is an int32 array of shape [time] and provides the phoneme state label for each frame. There are 71 distinct labels [0-70], one for each subphoneme.
+you can download the data on the MSRA website GEOLIFE by click this link
 
-```sh
-$ kaggle competitions download -c 11785-spring2021-hw1p2
-```
-#### Data for CNNs
-Given an image of a person’s face, the task of classifying the ID of the face is known as face classification. The input to your system will be a face image and you will have to predict the ID of the face. The ground truth will be present in the training data and the network will be doing an
-Multi-class Classification to get the prediction. You are provided with a validation set for fine-tuning your model.
+https://www.microsoft.com/en-us/download/details.aspx?id=52367&from=https%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2Fb16d359d-d164-469e-9fd4-daa38f2b2e13%2F
 
-```sh
-$ kaggle competitions download -c 11785-spring2021-hw2p2s1-face-classification
-```
 ### Model
 
 Toy model of MLP and CNN
