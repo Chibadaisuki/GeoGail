@@ -33,7 +33,7 @@ class replay_buffer(object):
             R = self.gamma * R * (1 - traj[8]) + traj[9]
             traj.append(R)
             # * the generalized advantage estimator(GAE)
-            delta = traj[3] + Value_previous * self.gamma * (1 - traj[8]) - traj[9]
+            delta = traj[7] + Value_previous * self.gamma * (1 - traj[8]) - traj[9]
             Adv = delta + (1 - traj[8]) * Adv * self.gamma * self.lam
             traj.append(Adv)
             Value_previous = traj[9]
