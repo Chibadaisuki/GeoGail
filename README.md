@@ -32,10 +32,17 @@ This is only a documentation package.
 
 ### Data
 
-you can download the data on the MSRA website GEOLIFE by click this link
+you can download the GEOLIFE data on the MSRA website GEOLIFE by click this link
 
 https://www.microsoft.com/en-us/download/details.aspx?id=52367&from=https%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fdownloads%2Fb16d359d-d164-469e-9fd4-daa38f2b2e13%2F
 
+you can download the Mobile data on the FIB LAB website Mobile by click this link
+
+http://fi.ee.tsinghua.edu.cn/appusage/
+
+The Data processing code is in the data_process file.
+
+And some example data in the DATA file
 ### Model
 
 This model utilizes a novel semantics-based interaction mechanism between the decision-making strategy and visitations to diverse geographical locations to model them in the semantic domain in a uniform manner. To augment the modeling ability to the real-world human decision-making policy, we propose a feature extraction model to extract the internal latent factors of variation of different individuals. Further, to better reward users' mobility behavior, we propose a novel multi-scale reward net combined with mutual information to model the instant reward, long-term reward, and individual characteristics in a cohesive manner.
